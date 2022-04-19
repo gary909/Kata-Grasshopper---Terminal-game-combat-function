@@ -1,5 +1,9 @@
 function combat(health, damage) {
-    // Write your code here
+    if (health - damage < 0) {
+        return 0;
+    } else {
+        return health - damage;
+    }
 }
 
 console.log(combat(100, 5)); // 95
